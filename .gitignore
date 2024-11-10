@@ -1,1 +1,30 @@
 bin/
+# Ignore the build directory
+target/
+
+# Ignore files created by Rust/Cargo
+**/*.rs.bk
+**/*.rlib
+
+# Ignore the Cargo lock file for libraries
+# (not necessary for binaries, but generally recommended for libraries)
+Cargo.lock
+
+# Ignore backup files created by editors
+*~
+*.swp
+*.swo
+*.bak
+
+# Ignore the Cargo-specific settings and logs
+.cargo/
+.cargo-lock
+
+# Ignore tools configuration
+**/.vscode/
+**/.idea/
+.DS_Store
+
+# Ignore files created by rustfmt, clippy, or other dev tools
+target/debug/
+target/
